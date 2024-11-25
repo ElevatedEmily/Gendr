@@ -6,10 +6,11 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class', // Enable dark mode
   theme: {
     extend: {
       animation: {
-        gradient: "gradient 8s ease-in-out infinite", // Smooth in and out
+        gradient: "gradient 8s ease-in-out infinite", // Smooth gradient animation
       },
       keyframes: {
         gradient: {
@@ -23,9 +24,11 @@ export default {
       },
       colors: {
         pinkTrans: "#FF6F91", // Brighter, bolder pink
-        // Vibrant pink
         blueTrans: "#5BCEFA", // Vibrant blue
         whiteTrans: "#FFFFFF", // Pure white
+      },
+      fontFamily: {
+        sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
